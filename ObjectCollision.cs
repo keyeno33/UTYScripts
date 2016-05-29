@@ -12,9 +12,14 @@ public class ObjectCollision : MonoBehaviour {
 
         switch (col.gameObject.name)
         {
-            case "Speed_Cube": //Increases playerObject speed
+            case "Quick_Speed_Cube": //Increases playerObject speed by 20
                 Destroy(col.gameObject);
-                speed = 20;
+                speed += 20;
+                break;
+
+            case "speed_Cube": //Increases playerObject speed by 5
+                Destroy(col.gameObject);
+                speed += 5;
                 break;
 
             case "Dec_Speed_Cube": //Decreases playerObject speed
