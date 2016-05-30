@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ObjectCollision : MonoBehaviour {
 
-    public int Speed;
+    private int Speed;
 
     void OnCollisionEnter(Collision col)
     {
